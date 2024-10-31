@@ -15,7 +15,9 @@ nav {
     display: flex;
     box-sizing: border-box;
 }
-
+.navbar-nav {
+    background-color: rosybrown;
+}
 
 .logo {
     width: 121px;
