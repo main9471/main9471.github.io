@@ -1,5 +1,6 @@
 body {
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,6 +15,7 @@ nav {
     background-color: rosybrown;
     display: flex;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .navbar-nav {
@@ -37,6 +39,7 @@ nav {
 .banner img {
     width: 100%;
     height: auto;
+    max-height: 400px;
 }
 
 h1 {
@@ -53,7 +56,7 @@ h1 {
 
 }
 
-#about {
+.about {
     margin-top: 0 auto;
     float: right;
     width: 100%;
@@ -67,7 +70,7 @@ h1 {
     background-color: rosybrown;
 }
 
-#history {
+.history {
     float: left;
     width: 100%;
     text-align: center;
@@ -89,12 +92,13 @@ h3 {
 }
 
 p {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     text-align: left;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding: 0%;
+    padding-left: 10px;
 }
 
 .content {
@@ -106,7 +110,7 @@ p {
 .responsive-image {
     width: 35%;
     height: auto;
-    margin: 20px;
+    margin: 20px auto;
 
 }
 
@@ -146,10 +150,6 @@ footer {
     margin-top: 100px;
 }
 
-#menu {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .card {
     background-color: antiquewhite;
     display: block;
@@ -181,7 +181,7 @@ footer {
     display: block;
 }
 
-#menu {
+.meals {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
     padding: 10px;
@@ -222,7 +222,7 @@ td {
 
 .contact {
     width: 50%;
-    margin: 0 auto;
+    margin-top: 20px;
     padding: 40px;
 }
 
@@ -302,18 +302,17 @@ td {
     -moz-appearance: none;
 }
 
-.information-ttl {
+.branches-ttl {
+    margin: 0 auto;
+    width: 80%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
     color: rgb(79, 66, 48);
-    padding: 10px;
     border: 10px double;
     border-color: white;
     background-color: rosybrown;
-    width: 400px;
-
 }
 
 .addressList {
@@ -352,12 +351,27 @@ td {
 }
 
 .privacy-policy {
-    margin: 0 auto;
-    text-align: left;
-    width: 60%
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
 }
 
-.text {
+.privacy-ttl {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(79, 66, 48);
+    border: 10px double;
+    border-color: white;
+    background-color: rosybrown;
+}
+
+
+
+.privacy-text {
     text-align: center;
     font-style: initial;
     border: 1px double;
@@ -368,7 +382,9 @@ td {
     list-style-position: inside;
     padding-left: 0;
     margin: 0 auto;
-    display: flexbox;
+    display: block;
+    text-align: left;
+    width: 70%;
 }
 
 .privacy-policy li {
@@ -384,8 +400,14 @@ td {
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     padding: 10px;
+    width: 70%;
+}
+
+.p-privacy {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .date {
@@ -401,6 +423,7 @@ td {
 @media only screen and (max-width: 676px) {
     body {
         width: 100%;
+        line-height: 1.2;
     }
 
     nav {
@@ -412,15 +435,15 @@ td {
         text-align: center;
     }
 
-    context {
+    .context {
         flex-wrap: wrap;
     }
 
-    #about {
+    .about {
         font-size: 24px;
     }
 
-    #history {
+    .history {
         font-size: 24px;
     }
 
@@ -437,17 +460,47 @@ td {
         bottom: 0;
     }
 
+    .card-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #meals {
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .addressList {
+        width: 100%;
+    }
+
     #name {
-        width: 40%;
+        width: 30%;
     }
 
     #phone {
-        width: 20%;
+        width: 30%;
     }
 
     #hours {
         width: 40%;
     }
 
+    .privacy-policy {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .privacy-ttl {
+        margin-top: 50px;
+    }
+
+    .privacy-policy li {
+        font-size: 15px;
+        line-height: 1rem;
+    }
 
 }

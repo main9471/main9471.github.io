@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu page</title>
+    <title>Menu</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -38,16 +38,16 @@
     <div class="title-container">
         <h1>MENU</h1>
     </div>
-    <h2 id="menu">Meals</h2>
+    <h2 class="meals">Meals</h2>
     <section>
         <div class="row" id="mealsGrid">
 
         </div>
     </section>
-    <h2 id="menu">Beverages</h2>
+    <h2 id="meals">Beverages</h2>
     <section class="tables-container">
         <div>
-            <h3>Coffee and Hotchocolate</h3>
+            <h3>Coffee and Hotchocolates</h3>
             <table id="beveragesTable" class="beveragesTable">
                 <thead>
                     <tr>
@@ -68,21 +68,21 @@
 
 
     <script src="script.js"></script>
+
+    <footer class="text-center">
+        <div>
+            © <span id="currentYear"></span> Bryan's Cafe.|
+            <a href="privacy-policy.html" class="text-dark" target="_blank">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
 </body>
-
-<footer class="text-center">
-    <div>
-        © <span id="currentYear"></span> Bryan's Cafe.|
-        <a href="privacy-policy.html" class="text-dark">Privacy Policy</a>
-    </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script>
-    const currentYear = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = currentYear;
-</script>
 
 </html>
