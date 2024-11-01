@@ -181,10 +181,15 @@ footer {
     display: block;
 }
 
+.card-text {
+    text-align: center;
+}
+
 .meals {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
     padding: 10px;
+    text-align: center;
 }
 
 .tables-container {
@@ -193,7 +198,7 @@ footer {
 
 .beveragesTable {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
