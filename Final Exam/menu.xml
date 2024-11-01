@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<menu>
+    <meals>
+        <item>
+            <name>Beetroot and feta salad</name>
+            <image>beetroot.jpg</image>
+            <description>Suitable for vegetarians, made with fresh beetroot</description>
+            <price>$15.00</price>
+        </item>
+        <item>
+            <name>Sourdough Rye Sandwich</name>
+            <image>sandwich.jpg</image>
+            <description>Cheese and salad sandwich made with organic,sourdough rye bread</description>
+            <price>$18.00</price>
+        </item>
+        <item>
+            <name>Spinach Pie and Salad</name>
+            <image>pie.jpg</image>
+            <description>Tasty pie with salad</description>
+            <price>$20.00</price>
+        </item>
+        <item>
+            <name>Feta pancakes with salad</name>
+            <image>pancake.jpg</image>
+            <description>Tasty pancake filled with feta and salad</description>
+            <price>$19.50</price>
+        </item>
+    </meals>
+    <beverages>
+        <item>
+            <size>Small</size>
+            <price>$3.50</price>
+        </item>
+        <item>
+            <size>Regular</size>
+            <price>$4.00</price>
+        </item>
+        <item>
+            <size>Large</size>
+            <price>$4.50</price>
+        </item>
+    </beverages>
+    <otherBeverages>
+        <item>
+            <name>Soda</name>
+            <price>$3.00</price>
+        </item>
+        <item>
+            <name>Fresh juice</name>
+            <price>$6.00</price>
+        </item>
+        <item>
+            <name>Bottled water</name>
+            <price>$2.00</price>
+        </item>
+    </otherBeverages>
+</menu>
+
+
+
