@@ -94,24 +94,34 @@ h3 {
 p {
     margin: 0 auto;
     width: 90%;
-    text-align: left;
+    text-align: center;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding-left: 10px;
 }
 
-.content {
+.content,
+.history-content {
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
-.responsive-image {
-    width: 35%;
+.responsive-image,
+.history-image {
+    max-width: 100%;
     height: auto;
-    margin: 20px auto;
+    margin-top: 20px;
+    margin: 10px
+}
 
+.text {
+    flex: 1;
+}
+
+.history-text {
+    flex: 1;
 }
 
 .container {
@@ -121,17 +131,10 @@ p {
     text-align: center;
 }
 
-.history-content {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-}
 
-.history-image {
-    width: 35%;
-    height: auto;
 
-}
+
+
 
 footer {
     width: 100%;
@@ -385,7 +388,7 @@ td {
 
 .privacy-policy ul {
     list-style-position: inside;
-    padding-left: 0;
+    padding-left: 300px;
     margin: 0 auto;
     display: block;
     text-align: left;
@@ -425,10 +428,11 @@ td {
     font-size: 25px;
 }
 
-@media only screen and (max-width: 676px) {
+@media only screen and (max-width: 767px) {
     body {
         width: 100%;
-        line-height: 1.2;
+        line-height: 1.2rem;
+        font-size: 14px;
     }
 
     nav {
@@ -440,24 +444,30 @@ td {
         text-align: center;
     }
 
-    .context {
+    .content {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
         flex-wrap: wrap;
     }
 
     .about {
-        font-size: 24px;
-    }
-
-    .history {
-        font-size: 24px;
-    }
-
-    p {
         font-size: 16px;
     }
 
+    .history {
+        font-size: 16px;
+    }
+
+    p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1rem;
+    }
+
     img {
-        width: 50%;
+        width: 45%;
+        margin: 0 auto;
     }
 
     footer {
