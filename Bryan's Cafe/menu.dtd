@@ -2,9 +2,9 @@
 <!ELEMENT meals (item+)>
 <!ELEMENT beverages (item+)>
 <!ELEMENT otherBeverages (item+)>
-<!ELEMENT item (name?, size?, price, description, image?)>
+<!ELEMENT item (name?, image?, size?, description?, price)>
 <!ELEMENT name (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
 <!ELEMENT size (#PCDATA)>
-<!ELEMENT price (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!ELEMENT image (#PCDATA)> 
+<!ELEMENT price (#PCDATA)>
