@@ -1,0 +1,6 @@
+<!ELEMENT branches (address+)>
+<!ELEMENT address (name, phone, hours, url)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT hours (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
